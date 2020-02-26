@@ -3,9 +3,11 @@ var api = "trnsl.1.1.20200220T213404Z.a824d72928c6b677.5a78e7813b7639cc7f382011a
 //make sure DOM is loaded before proceeding
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', submitEnglish);
+    document.addEventListener('DOMContentLoaded', convert);
 }
 else {
     submitEnglish();
+
 }
 
 function submitEnglish() {
@@ -41,3 +43,6 @@ function submitEnglish() {
     });
 }
 
+function conver() {
+
+}

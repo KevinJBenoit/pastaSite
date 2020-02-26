@@ -27,6 +27,19 @@
         <li>Minced fresh parsley</li>
         <li>Parmesean/Peccorino</li>
     </ul>
+    <div>
+        <form>
+            <label for="selector">Convert Ingredient:</label>
+            <select name="dropdown" id="ingredient">
+                <option value="wine">White Wine</option>
+                <option value="capers">Capers</option>
+                <option value="olives">Black Olives</option>
+                <option value="tomatoes">Tomatoes</option>
+            </select>
+            <input id="convertButton" type="submit" value="Convert">
+            <p id="conversion"></p>
+        </form>
+    </div>
     <h3>Quick Instructions</h3>
     <ol id="Instructions">
         <li>Slice your garlic, crush your tomatoes, and chop your olives, capers, and anchovies</li>
@@ -122,5 +135,6 @@
     <p>Garnish with parsley and some additional cheese if you want.</p>
     <img src="images/puttanesca/put16.jpg">
     <p>Enjoy!</p>
+    <script src="recipe3Script.js"></script>
 </body>
 </html>
