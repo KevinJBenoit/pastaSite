@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Italy From Home</h1>
+    <div id="topPage">
+        <img class="flag" src="http://bestanimations.com/Flags/Europe/Western/Italy/italy-flag-waving-animated-gif-17.gif">
+        <!-- carousel using bootstrap -->
+        <!-- https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="pastaCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="pastaCarousel" data-slide-to="1"></li>
+                <li data-target="pastaCarousel" data-slide-to="2"></li>
+                <li data-target="pastaCarousel" data-slide-to="3"></li>
+                <li data-target="pastaCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/ama1.jpg" alt="Dough">
+                </div>
+
+                <div class="item">
+                    <img src="images/ama2.jpg" alt="Sauce1">
+                </div>
+                <div class="item">
+                    <img src="images/dough/dough36.jpg" alt="Dough1">
+                </div>
+                <div class="item">
+                    <img src="images/ama3.jpg" alt="Sauce2">
+                </div>
+                <div class="item">
+                    <img src="images/puttanesca/put13.jpg" alt="Dough1">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <img class="flag" src="http://bestanimations.com/Flags/Europe/Western/Italy/italy-flag-waving-animated-gif-17.gif">
+    </div>
+
+    <div id="intro">
+        <p>
+            A recent trip to Italy had inspired me to learn how to make fresh pasta
+            dough at home along with 2 of my favorite dishes from my vacation.
+            Eating your own fresh pasta makes your meal feel gourmet but also makes
+            it relatively inexpensive! For my project, I will teach you how to make
+            the basic pasta dough along with 2 dishes,“Amatriciana” and "Puttanesca".
+        </p>
+    </div>
+    <br>
+    <h3>Recipes</h3>
+    <div id="recipeBox">
+        <div class="link">
+            <h4>Amatriciana</h4>
+            <a href="recipe1.html">
+                <img class="recipeLink" src="images/ama17.jpg">
+            </a>
+        </div>
+        <div class="link">
+            <h4>Pasta Dough</h4>
+            <a href="recipe2.html">
+                <img class="recipeLink" src="images/dough/dough38.jpg">
+            </a>
+        </div>
+        <div class="link">
+            <h4>Puttanesca</h4>
+            <a href="recipe3.html">
+                <img id="tom" class="recipeLink" src="images/puttanesca/put14.jpg">
+            </a>
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <span id="resources">
+        <a id="download" href="Menu.pdf" download="gcc_tutorial.pdf" target="_blank">Download PDF Menu</a>
+        <div id="scrollbar" style="overflow: scroll; height: 100px">
+            <ul>
+                <label>My Reccommended Equipment</label>
+                <li><a href="https://www.amazon.com/Marcato-8320-Machine-Cutter-Instructions/dp/B0009U5OSO/" target="_blank">Pasta Machine/Roller</a></li>
+                <li><a href="https://www.amazon.com/Joseph-20085-Adjustable-Removable-Multicolored/dp/B0091QO3RK/" target="_blank">Rolling Pin</a></li>
+                <li><a href="https://www.amazon.com/OXO-1157100-Digital-Scale-Black/dp/B0020L6T7K/" target="_blank">Kitchen Scale</a></li>
+                <li><a href="https://www.amazon.com/gp/product/B0047T6VC6/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1" target="_blank">Pasta Board</a></li>
+                <li><a href="https://www.amazon.com/Norpro-Stainless-Steel-Scraper-Chopper/dp/B000SSZ4Q4/" target="_blank">Bench Scraper</a></li>
+            </ul>
+        </div>
+    </span>
+    <br>
+    <form id="googleForm">
+        <h3>Translate to Italian!</h3>
+        <p>You can find a lot of good recipes online by simply seraching for dishes in Italian!
+            Translate some common pasta dishes you know of and give them a Google!
+        </p>
+        <fieldset>
+            English: <input id="english" type="text" placeholder="Enter your Text Here">
+            <input id="submitEnglish" type="submit" value="Translate">
+        </fieldset>
+        <br>
+        <p id="response">Italian: </p>
+        <p><strong>Powered by Yandex.Translate</strong></p>
+    </form>
+    <p>All images sourced by me, Kevin Benoit</p>
+    <p>gifs sourced from <a href="http://bestanimations.com/Flags/Europe/Western/Italy/Italy.html">bestanimations.com</a></p>
+    <script src="script.js"></script>
+</body>
+</html>
