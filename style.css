@@ -17,6 +17,7 @@ body {
     border-width: 2px;
     width: 20%;
     height: auto;
+    border-radius: 10px;
 }
 
 .flag {
@@ -48,7 +49,9 @@ body {
     border-image-slice: 1;
     border-style: solid;
 }
-
+img {
+    border-radius: 10px;
+}
 .recipe {
     display: flex;
     text-align: center;

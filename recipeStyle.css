@@ -47,6 +47,7 @@ img {
     max-width:20%;
     height:auto;
     overflow: hidden;
+    border-radius: 10px;
 }
 .landscape {
     max-width:30%;
